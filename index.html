@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SAE 1.03</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <style>
+    body.dark-mode { background-color:#2e003e !important; color:#fff !important; }
+    nav.dark-mode { background-color:#1c002b !important; }
+    nav.dark-mode .navbar-brand,
+    nav.dark-mode .nav-link { color:#fff !important; }
+    body, nav { transition: background-color .4s ease, color .4s ease; }
+    .card:hover { transform:translateY(-3px); box-shadow:0 6px 15px rgba(0,0,0,0.3); transition:all .3s ease; }
+  </style>
+</head>
+
+<body class="dark-mode">
+  <nav class="navbar navbar-expand-lg navbar-dark dark-mode py-3">
+    <div class="container-fluid">
+      <a class="navbar-brand fs-3 fw-bold" href="index.html">SAE 1.03</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+        aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarContent">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+          <li class="nav-item"><a class="nav-link" href="semaines.html">Semaines</a></li>
+          <li class="nav-item"><a class="nav-link active" href="questions.html">Questions</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container py-5">
+    <header class="text-center mb-5">
+      <img src="https://u-paris.fr/wp-content/uploads/2022/03/UniversiteParisCite_logo_horizontal_couleur_RVB.jpg" alt="Logo IUT" class="img-fluid mb-3" style="max-width: 400px;">
+      <h1 class="mb-3">SAE 1.03</h1>
+      <p class="lead">Groupe 112 - Binome 5</p>
+    </header>
+    <section class="mb-4">
+      <div class="alert alert-info" role="alert">
+        <h4 class="alert-heading">Introduction</h4>
+        <p>Lors de cette SAE 1.03, nous avons dû créer une machine virtuelle, installer un système d'exploitation Linux, et configurer un serveur web. Nous avons également appris à utiliser des outils de virtualisation et à gérer des utilisateurs et des groupes sur le système. La plupart des choix et des configurations ont été laissés à notre discrétion, ce qui nous a permis de personnaliser notre environnement de travail.</p>
+        <hr>
+        <p class="mb-0">Vous pouvez voir tout d'abord les tâches effectuées par semaine, puis une vidéo de la SAE, et enfin une présentation de l'équipe.</p>
+      </div>
+    </section>
+    <section class="mb-5">
+      <button class="btn btn-warning" type="button" data-bs-toggle="collapse" data-bs-target="#SemaineTable" aria-expanded="false" aria-controls="SemaineTable">
+        Tâches effectué par semaine
+      </button>
+      <div class="collapse mt-3" id="SemaineTable">
+        <div class="card card-body bg-dark text-light border-light">
+          <h2 class="mb-3">Tâches effectué par semaine.</h2>
+          <div class="table-responsive">
+            <table class="table table-striped table-dark table-hover align-middle">
+              <thead>
+                <tr>
+                  <th scope="col">Semaine</th>
+                  <th scope="col">Description</th>
+                  <th scope="col">Temps requis</th>
+                  <th scope="col">Détails</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Semaine 1</td>
+                  <td>Présentation du projet en amphi de la ressource R1.04 « Introduction aux systèmes d’exploitation à leur fonctionnement ».</td>
+                  <td>~15 minutes</td>
+                  <td><button class="btn btn-sm btn-outline-info" data-bs-toggle="modal" data-bs-target="#SemaineModal1">Plus d'infos</button></td>
+                </tr>
+                <tr>
+                  <td>Semaine 2</td>
+                  <td>Création d’une machine virtuelle de type Linux sur VirtualBox, VMWare, Stratus…</td>
+                  <td>~20 minutes</td>
+                  <td><button class="btn btn-sm btn-outline-info" data-bs-toggle="modal" data-bs-target="#SemaineModal2">Plus d'infos</button></td>
+                </tr>
+                <tr>
+                  <td>Semaine 3</td>
+                  <td>Création et utilisation d’une MV.<br>Création d’un compte administrateur admin_GrXX_BinomeYY, XX et YY étant respectivement votre numéro de groupe et de binôme.<br>Création de deux utilisateurs BinomeYY_1 et BinomeYY_2.<br>Création d’un groupe BinomeYY.<br>Personnalisation d’une invite de commande (prompt) paramétrée avec le nom de l’utilisateur.</td>
+                  <td>~15 minutes</td>
+                  <td><button class="btn btn-sm btn-outline-info" data-bs-toggle="modal" data-bs-target="#SemaineModal3">Plus d'infos</button></td>
+                </tr>
+                <tr>
+                  <td>Semaine 4</td>
+                  <td>Installation et configuration d’un service web (Apache, Nginx, …).<br>Configuration de Visual Studio Code pour le déploiement.</td>
+                  <td>~10 minutes</td>
+                  <td><button class="btn btn-sm btn-outline-info" data-bs-toggle="modal" data-bs-target="#SemaineModal4">Plus d'infos</button></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="mb-5">
+      <h2>Video de la SAE</h2>
+      <p>Ici, vous pouvez voir une démonstration de la SAE, pour chaque semaine. Vous pouvez également voir la vidéo d'une heure de la SAE.</p>
+      <div class="btn-group mb-3" role="group">
+        <button class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#fullVideo" aria-expanded="true" aria-controls="fullVideo">Vidéo complète</button>
+        <button class="btn btn-info" data-bs-toggle="collapse" data-bs-target="#part2" aria-expanded="false" aria-controls="part2">Semaine S1-B2</button>
+        <button class="btn btn-danger" data-bs-toggle="collapse" data-bs-target="#part3" aria-expanded="false" aria-controls="part3">Semaine S1-B3</button>
+        <button class="btn btn-warning" data-bs-toggle="collapse" data-bs-target="#part4" aria-expanded="false" aria-controls="part4">Semaine S1-B4</button>
+      </div>
+      <div class="collapse show" id="fullVideo">
+        <div class="card card-body bg-secondary">
+          <div class="ratio ratio-16x9">
+        <video src="https://raph9213.xyz/sae/demo-full.mp4" allowfullscreen muted controls></iframe>
+          </div>
+        </div>
+      </div>
+      <div class="collapse" id="part2">
+        <div class="card card-body bg-secondary">
+          <div class="ratio ratio-16x9">
+        <video src="https://raph9213.xyz/sae/output000.mp4" allowfullscreen muted controls></iframe>
+          </div>
+        </div>
+      </div>
+      <div class="collapse" id="part3">
+        <div class="card card-body bg-secondary">
+          <div class="ratio ratio-16x9">
+        <video src="https://raph9213.xyz/sae/output001.mp4" allowfullscreen muted contorls></iframe>
+          </div>
+        </div>
+      </div>
+      <div class="collapse" id="part4">
+        <div class="card card-body bg-secondary">
+          <div class="ratio ratio-16x9">
+        <video src="https://raph9213.xyz/sae/output002.mp4" allowfullscreen muted controls></iframe>
+          </div>
+        </div>
+      </div>
+        </section>
+    <section class="mb-5">
+      <h2>Notre équipe</h2>
+      <div class="row row-cols-1 row-cols-md-3 g-4 mt-3">
+        <div class="col">
+          <div class="card h-100 text-center">
+            <img src="https://cdn.discordapp.com/avatars/453254164798111754/a_42de0caa2deb50c8ff3ca6ff7aa8288d.gif?size=1024" class="card-img-top" alt="Raphaël">
+            <div class="card-body">
+              <h5 class="card-title">Raphaël RISPAUD<span class="badge bg-primary">Effecute les tâches, rédacteur des rapports et du site</span></h5>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 text-center">
+            <img src="https://cdn.discordapp.com/embed/avatars/0.png?size=1024" class="card-img-top" alt="Tiago">
+            <div class="card-body">
+              <h5 class="card-title">Tiago PEREIRA DE BARROS<span class="badge bg-success">Relecture des textes</span></h5>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 text-center">
+            <img src="https://cdn.discordapp.com/embed/avatars/0.png?size=1024" class="card-img-top" alt="Mahmud">
+            <div class="card-body">
+              <h5 class="card-title">Mahmud Hassan MAHHI<span class="badge bg-info">Relecture du site</span></h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="text-center mb-5">
+      <h3>Navigation</h3>
+      <div class="btn-group btn-group-lg mt-3" role="group">
+        <a href="semaines.html" class="btn btn-warning">Aller vers Semaines</a>
+        <a href="questions.html" class="btn btn-success">Aller vers Questions</a>
+      </div>
+    </section>
+    <section class="mb-5">
+      <div class="alert alert-secondary" role="alert">
+        <h4>Informations techniques utilisé</h4>
+        <p>OS Utilisé: ArchLinux, Logiciel utilisé: Oracle VirtualBox, Paramètres utilisés: 8 GO de mémoire vive, 4 coeur de cpu. Plus de détail dans les questions.</p>
+      </div>
+    </section>
+  </main>
+  <div class="modal fade" id="SemaineModal1" tabindex="-1" aria-labelledby="SemaineModal1Label" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content bg-dark text-light">
+        <div class="modal-header">
+          <h5 class="modal-title" id="SemaineModal1Label">Semaine 1</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Lors de la semaine 1, nous avons été présenté au projet en amphi de la ressource R1.04 « Introduction aux systèmes d’exploitation à leur fonctionnement », et avons reçu les premières instructions pour la SAE.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="SemaineModal2" tabindex="-1" aria-labelledby="SemaineModal2Label" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content bg-dark text-light">
+        <div class="modal-header">
+          <h5 class="modal-title" id="SemaineModal2Label">Semaine 2</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Lors de la deuxième semaine, nous avons créé une machine virtuelle de type Linux sur VirtualBox, VMWare, Stratus, etc. Nous avons également installé ArchLinux sur la machine virtuelle et configuré les paramètres de base.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="SemaineModal3" tabindex="-1" aria-labelledby="SemaineModal3Label" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content bg-dark text-light">
+        <div class="modal-header">
+          <h5 class="modal-title" id="SemaineModal3Label">Semaine 3</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          La troisième semaine était focalisée sur la création et l'utilisation d'une machine virtuelle. Nous avons créé un compte administrateur, deux utilisateurs, un groupe, et personnalisé l'invite de commande.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="SemaineModal4" tabindex="-1" aria-labelledby="SemaineModal4Label" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content bg-dark text-light">
+        <div class="modal-header">
+          <h5 class="modal-title" id="SemaineModal4Label">Semaine 4</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Et lors de la dernière semaine, nous avons installé et configuré un service web (Apache, Nginx, etc.), et configuré Visual Studio Code pour le déploiement, avec un server locale et git.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
